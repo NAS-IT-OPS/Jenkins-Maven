@@ -3,12 +3,12 @@ agent any
 stages{
   stage('Build'){
     steps{
-    sh '/home/tounga/maven3/bin/mvn clean install'
+    sh '/home/nas/apache-maven-3.5.3/bin/mvn clean install'
     }
   }
   stage('Test'){
     steps{
-    sh '/home/tounga/maven3/bin/mvn test'
+    sh '/home/nas/apache-maven-3.5.3/bin/mvn test'
     }
   }
 }
